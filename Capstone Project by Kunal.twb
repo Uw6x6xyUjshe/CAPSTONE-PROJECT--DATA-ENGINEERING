@@ -1,0 +1,2035 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20263.26.1015.1742                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='c41fdb6404af5b706614ff156a3da1216e4d3bfb902a21addd8364c35e87b90b' _.fcp.WorkbookFingerprinting.true...creator-author-id='c41fdb6404af5b706614ff156a3da1216e4d3bfb902a21addd8364c35e87b90b' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='c41fdb6404af5b706614ff156a3da1216e4d3bfb902a21addd8364c35e87b90b' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='c41fdb6404af5b706614ff156a3da1216e4d3bfb902a21addd8364c35e87b90b' original-version='18.1' source-build='2026.3.0 (20263.26.1015.1742)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='gold_summary' inline='true' name='federated.1bdylm50pykv2l19913zi0cjncp3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='gold_summary' name='textscan.0lc0lu31txxk1518oq0zk0bnwnoc'>
+            <connection class='textscan' directory='C:/Users/ashmi/Downloads' filename='gold_summary.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0lc0lu31txxk1518oq0zk0bnwnoc' name='gold_summary.csv' table='[gold_summary#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='total_appointments' ordinal='0' />
+            <column datatype='integer' name='completed' ordinal='1' />
+            <column datatype='integer' name='cancelled' ordinal='2' />
+            <column datatype='integer' name='no_shows' ordinal='3' />
+            <column datatype='real' name='completion_rate_pct' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[gold_summary.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_appointments</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_appointments]</local-name>
+            <parent-name>[gold_summary.csv]</parent-name>
+            <remote-alias>total_appointments</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[gold_summary.csv_D5415DEC0EB94A829BDB90CC57252BED]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>completed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[completed]</local-name>
+            <parent-name>[gold_summary.csv]</parent-name>
+            <remote-alias>completed</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[gold_summary.csv_D5415DEC0EB94A829BDB90CC57252BED]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cancelled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cancelled]</local-name>
+            <parent-name>[gold_summary.csv]</parent-name>
+            <remote-alias>cancelled</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[gold_summary.csv_D5415DEC0EB94A829BDB90CC57252BED]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>no_shows</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[no_shows]</local-name>
+            <parent-name>[gold_summary.csv]</parent-name>
+            <remote-alias>no_shows</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[gold_summary.csv_D5415DEC0EB94A829BDB90CC57252BED]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>completion_rate_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[completion_rate_pct]</local-name>
+            <parent-name>[gold_summary.csv]</parent-name>
+            <remote-alias>completion_rate_pct</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[gold_summary.csv_D5415DEC0EB94A829BDB90CC57252BED]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='gold_summary.csv' datatype='table' name='[__tableau_internal_object_id__].[gold_summary.csv_D5415DEC0EB94A829BDB90CC57252BED]' role='measure' type='quantitative' />
+      <column caption='Cancelled' datatype='integer' name='[cancelled]' role='measure' type='quantitative' />
+      <column caption='Completed' datatype='integer' name='[completed]' role='measure' type='quantitative' />
+      <column caption='Completion Rate Pct' datatype='real' name='[completion_rate_pct]' role='measure' type='quantitative' />
+      <column caption='No Shows' datatype='integer' name='[no_shows]' role='measure' type='quantitative' />
+      <column caption='Total Appointments' datatype='integer' name='[total_appointments]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/ashmi/AppData/Local/Temp/TableauTemp/#TableauTemp_1q0ydde1qki8io14d2jc60yhbcuv.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/22/2026 07:50:19 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>total_appointments</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_appointments]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_appointments</remote-alias>
+              <ordinal>0</ordinal>
+              <family>gold_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[gold_summary.csv_D5415DEC0EB94A829BDB90CC57252BED]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>completed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[completed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>completed</remote-alias>
+              <ordinal>1</ordinal>
+              <family>gold_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[gold_summary.csv_D5415DEC0EB94A829BDB90CC57252BED]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cancelled</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cancelled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cancelled</remote-alias>
+              <ordinal>2</ordinal>
+              <family>gold_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[gold_summary.csv_D5415DEC0EB94A829BDB90CC57252BED]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>no_shows</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[no_shows]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>no_shows</remote-alias>
+              <ordinal>3</ordinal>
+              <family>gold_summary.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[gold_summary.csv_D5415DEC0EB94A829BDB90CC57252BED]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>completion_rate_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[completion_rate_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>completion_rate_pct</remote-alias>
+              <ordinal>4</ordinal>
+              <family>gold_summary.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[gold_summary.csv_D5415DEC0EB94A829BDB90CC57252BED]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='gold_summary.csv' id='gold_summary.csv_D5415DEC0EB94A829BDB90CC57252BED'>
+            <properties context=''>
+              <relation connection='textscan.0lc0lu31txxk1518oq0zk0bnwnoc' name='gold_summary.csv' table='[gold_summary#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='total_appointments' ordinal='0' />
+                  <column datatype='integer' name='completed' ordinal='1' />
+                  <column datatype='integer' name='cancelled' ordinal='2' />
+                  <column datatype='integer' name='no_shows' ordinal='3' />
+                  <column datatype='real' name='completion_rate_pct' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='gold_specialization' inline='true' name='federated.05a4qp91kz3cvc18p96oh08bi67g' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='gold_specialization' name='textscan.1hrkw610zkshyu1ap8vr206tl834'>
+            <connection class='textscan' directory='C:/Users/ashmi/Downloads' filename='gold_specialization.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1hrkw610zkshyu1ap8vr206tl834' name='gold_specialization.csv' table='[gold_specialization#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='specialization' ordinal='0' />
+            <column datatype='integer' name='appointments' ordinal='1' />
+            <column datatype='integer' name='completed' ordinal='2' />
+            <column datatype='integer' name='cancelled' ordinal='3' />
+            <column datatype='integer' name='no_shows' ordinal='4' />
+            <column datatype='real' name='completion_rate_pct' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[gold_specialization.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>specialization</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[specialization]</local-name>
+            <parent-name>[gold_specialization.csv]</parent-name>
+            <remote-alias>specialization</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[gold_specialization.csv_8B30BE2C67164AD08FF5900FBE25B824]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appointments</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[appointments]</local-name>
+            <parent-name>[gold_specialization.csv]</parent-name>
+            <remote-alias>appointments</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[gold_specialization.csv_8B30BE2C67164AD08FF5900FBE25B824]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>completed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[completed]</local-name>
+            <parent-name>[gold_specialization.csv]</parent-name>
+            <remote-alias>completed</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[gold_specialization.csv_8B30BE2C67164AD08FF5900FBE25B824]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cancelled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cancelled]</local-name>
+            <parent-name>[gold_specialization.csv]</parent-name>
+            <remote-alias>cancelled</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[gold_specialization.csv_8B30BE2C67164AD08FF5900FBE25B824]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>no_shows</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[no_shows]</local-name>
+            <parent-name>[gold_specialization.csv]</parent-name>
+            <remote-alias>no_shows</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[gold_specialization.csv_8B30BE2C67164AD08FF5900FBE25B824]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>completion_rate_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[completion_rate_pct]</local-name>
+            <parent-name>[gold_specialization.csv]</parent-name>
+            <remote-alias>completion_rate_pct</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[gold_specialization.csv_8B30BE2C67164AD08FF5900FBE25B824]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='gold_specialization.csv' datatype='table' name='[__tableau_internal_object_id__].[gold_specialization.csv_8B30BE2C67164AD08FF5900FBE25B824]' role='measure' type='quantitative' />
+      <column caption='Appointments' datatype='integer' name='[appointments]' role='measure' type='quantitative' />
+      <column caption='Cancelled' datatype='integer' name='[cancelled]' role='measure' type='quantitative' />
+      <column caption='Completed' datatype='integer' name='[completed]' role='measure' type='quantitative' />
+      <column caption='Completion Rate Pct' datatype='real' name='[completion_rate_pct]' role='measure' type='quantitative' />
+      <column caption='No Shows' datatype='integer' name='[no_shows]' role='measure' type='quantitative' />
+      <column caption='Specialization' datatype='string' name='[specialization]' role='dimension' type='nominal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/ashmi/AppData/Local/Temp/TableauTemp/#TableauTemp_1ec44rp1iwubm018mhdh91dhxnjd.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/22/2026 07:50:33 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>specialization</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[specialization]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>specialization</remote-alias>
+              <ordinal>0</ordinal>
+              <family>gold_specialization.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[gold_specialization.csv_8B30BE2C67164AD08FF5900FBE25B824]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>appointments</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[appointments]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>appointments</remote-alias>
+              <ordinal>1</ordinal>
+              <family>gold_specialization.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[gold_specialization.csv_8B30BE2C67164AD08FF5900FBE25B824]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>completed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[completed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>completed</remote-alias>
+              <ordinal>2</ordinal>
+              <family>gold_specialization.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[gold_specialization.csv_8B30BE2C67164AD08FF5900FBE25B824]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cancelled</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cancelled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cancelled</remote-alias>
+              <ordinal>3</ordinal>
+              <family>gold_specialization.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[gold_specialization.csv_8B30BE2C67164AD08FF5900FBE25B824]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>no_shows</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[no_shows]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>no_shows</remote-alias>
+              <ordinal>4</ordinal>
+              <family>gold_specialization.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[gold_specialization.csv_8B30BE2C67164AD08FF5900FBE25B824]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>completion_rate_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[completion_rate_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>completion_rate_pct</remote-alias>
+              <ordinal>5</ordinal>
+              <family>gold_specialization.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[gold_specialization.csv_8B30BE2C67164AD08FF5900FBE25B824]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='gold_specialization.csv' id='gold_specialization.csv_8B30BE2C67164AD08FF5900FBE25B824'>
+            <properties context=''>
+              <relation connection='textscan.1hrkw610zkshyu1ap8vr206tl834' name='gold_specialization.csv' table='[gold_specialization#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='specialization' ordinal='0' />
+                  <column datatype='integer' name='appointments' ordinal='1' />
+                  <column datatype='integer' name='completed' ordinal='2' />
+                  <column datatype='integer' name='cancelled' ordinal='3' />
+                  <column datatype='integer' name='no_shows' ordinal='4' />
+                  <column datatype='real' name='completion_rate_pct' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='gold_daily' inline='true' name='federated.1388pvj119p5181391djb0ytiqrl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='gold_daily' name='textscan.1fktfng1iwetxy12gkxpk1suqclv'>
+            <connection class='textscan' directory='C:/Users/ashmi/Downloads' filename='gold_daily.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1fktfng1iwetxy12gkxpk1suqclv' name='gold_daily.csv' table='[gold_daily#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='appointment_date' ordinal='0' />
+            <column datatype='integer' name='appointments' ordinal='1' />
+            <column datatype='integer' name='completed' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[gold_daily.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appointment_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[appointment_date]</local-name>
+            <parent-name>[gold_daily.csv]</parent-name>
+            <remote-alias>appointment_date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[gold_daily.csv_2C91F05712AF4FF492BA0057622F7701]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>appointments</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[appointments]</local-name>
+            <parent-name>[gold_daily.csv]</parent-name>
+            <remote-alias>appointments</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[gold_daily.csv_2C91F05712AF4FF492BA0057622F7701]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>completed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[completed]</local-name>
+            <parent-name>[gold_daily.csv]</parent-name>
+            <remote-alias>completed</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[gold_daily.csv_2C91F05712AF4FF492BA0057622F7701]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='gold_daily.csv' datatype='table' name='[__tableau_internal_object_id__].[gold_daily.csv_2C91F05712AF4FF492BA0057622F7701]' role='measure' type='quantitative' />
+      <column caption='Appointment Date' datatype='date' name='[appointment_date]' role='dimension' type='ordinal' />
+      <column caption='Appointments' datatype='integer' name='[appointments]' role='measure' type='quantitative' />
+      <column caption='Completed' datatype='integer' name='[completed]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/ashmi/AppData/Local/Temp/TableauTemp/#TableauTemp_05x2lm41h650y31e3niv10bjx487.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/22/2026 07:52:21 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>appointment_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[appointment_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>appointment_date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>gold_daily.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[gold_daily.csv_2C91F05712AF4FF492BA0057622F7701]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>appointments</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[appointments]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>appointments</remote-alias>
+              <ordinal>1</ordinal>
+              <family>gold_daily.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[gold_daily.csv_2C91F05712AF4FF492BA0057622F7701]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>completed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[completed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>completed</remote-alias>
+              <ordinal>2</ordinal>
+              <family>gold_daily.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[gold_daily.csv_2C91F05712AF4FF492BA0057622F7701]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='gold_daily.csv' id='gold_daily.csv_2C91F05712AF4FF492BA0057622F7701'>
+            <properties context=''>
+              <relation connection='textscan.1fktfng1iwetxy12gkxpk1suqclv' name='gold_daily.csv' table='[gold_daily#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='date' name='appointment_date' ordinal='0' />
+                  <column datatype='integer' name='appointments' ordinal='1' />
+                  <column datatype='integer' name='completed' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='gold_billing' inline='true' name='federated.1tkowto0cwyedx1bhjb5p18453lj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='gold_billing' name='textscan.0ug3k5g096839n147vo920zbin33'>
+            <connection class='textscan' directory='C:/Users/ashmi/Downloads' filename='gold_billing.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ug3k5g096839n147vo920zbin33' name='gold_billing.csv' table='[gold_billing#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='payment_status' ordinal='0' />
+            <column datatype='integer' name='bill_count' ordinal='1' />
+            <column datatype='real' name='total_amount_inr' ordinal='2' />
+            <column datatype='integer' name='bills_with_matching_appointment' ordinal='3' />
+            <column datatype='integer' name='bills_without_matching_appointment' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[gold_billing.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payment_status]</local-name>
+            <parent-name>[gold_billing.csv]</parent-name>
+            <remote-alias>payment_status</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[gold_billing.csv_8CB929EEC56B43169E14EDA074AAEA85]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bill_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bill_count]</local-name>
+            <parent-name>[gold_billing.csv]</parent-name>
+            <remote-alias>bill_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[gold_billing.csv_8CB929EEC56B43169E14EDA074AAEA85]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_amount_inr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_amount_inr]</local-name>
+            <parent-name>[gold_billing.csv]</parent-name>
+            <remote-alias>total_amount_inr</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[gold_billing.csv_8CB929EEC56B43169E14EDA074AAEA85]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bills_with_matching_appointment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bills_with_matching_appointment]</local-name>
+            <parent-name>[gold_billing.csv]</parent-name>
+            <remote-alias>bills_with_matching_appointment</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[gold_billing.csv_8CB929EEC56B43169E14EDA074AAEA85]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bills_without_matching_appointment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bills_without_matching_appointment]</local-name>
+            <parent-name>[gold_billing.csv]</parent-name>
+            <remote-alias>bills_without_matching_appointment</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[gold_billing.csv_8CB929EEC56B43169E14EDA074AAEA85]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='gold_billing.csv' datatype='table' name='[__tableau_internal_object_id__].[gold_billing.csv_8CB929EEC56B43169E14EDA074AAEA85]' role='measure' type='quantitative' />
+      <column caption='Bill Count' datatype='integer' name='[bill_count]' role='measure' type='quantitative' />
+      <column caption='Bills With Matching Appointment' datatype='integer' name='[bills_with_matching_appointment]' role='measure' type='quantitative' />
+      <column caption='Bills Without Matching Appointment' datatype='integer' name='[bills_without_matching_appointment]' role='measure' type='quantitative' />
+      <column caption='Payment Status' datatype='string' name='[payment_status]' role='dimension' type='nominal' />
+      <column caption='Total Amount Inr' datatype='real' name='[total_amount_inr]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/ashmi/AppData/Local/Temp/TableauTemp/#TableauTemp_05oal4r1eu1ye516xygmz01mx0mg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/22/2026 07:52:24 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>payment_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[payment_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payment_status</remote-alias>
+              <ordinal>0</ordinal>
+              <family>gold_billing.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[gold_billing.csv_8CB929EEC56B43169E14EDA074AAEA85]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bill_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[bill_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bill_count</remote-alias>
+              <ordinal>1</ordinal>
+              <family>gold_billing.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[gold_billing.csv_8CB929EEC56B43169E14EDA074AAEA85]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_amount_inr</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_amount_inr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_amount_inr</remote-alias>
+              <ordinal>2</ordinal>
+              <family>gold_billing.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[gold_billing.csv_8CB929EEC56B43169E14EDA074AAEA85]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bills_with_matching_appointment</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[bills_with_matching_appointment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bills_with_matching_appointment</remote-alias>
+              <ordinal>3</ordinal>
+              <family>gold_billing.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[gold_billing.csv_8CB929EEC56B43169E14EDA074AAEA85]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bills_without_matching_appointment</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[bills_without_matching_appointment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bills_without_matching_appointment</remote-alias>
+              <ordinal>4</ordinal>
+              <family>gold_billing.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[gold_billing.csv_8CB929EEC56B43169E14EDA074AAEA85]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='gold_billing.csv' id='gold_billing.csv_8CB929EEC56B43169E14EDA074AAEA85'>
+            <properties context=''>
+              <relation connection='textscan.0ug3k5g096839n147vo920zbin33' name='gold_billing.csv' table='[gold_billing#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='payment_status' ordinal='0' />
+                  <column datatype='integer' name='bill_count' ordinal='1' />
+                  <column datatype='real' name='total_amount_inr' ordinal='2' />
+                  <column datatype='integer' name='bills_with_matching_appointment' ordinal='3' />
+                  <column datatype='integer' name='bills_without_matching_appointment' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Appointment KPI'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gold_summary' name='federated.1bdylm50pykv2l19913zi0cjncp3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bdylm50pykv2l19913zi0cjncp3'>
+            <column-instance column='[total_appointments]' derivation='Sum' name='[sum:total_appointments:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Appointments' datatype='integer' name='[total_appointments]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1bdylm50pykv2l19913zi0cjncp3].[sum:total_appointments:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0' fontsize='28'><![CDATA[<[federated.1bdylm50pykv2l19913zi0cjncp3].[sum:total_appointments:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C2C65559-71F4-453E-9A87-39E0937DFC45}' />
+    </worksheet>
+    <worksheet name='Appointments by specialisation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gold_specialization' name='federated.05a4qp91kz3cvc18p96oh08bi67g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05a4qp91kz3cvc18p96oh08bi67g'>
+            <column caption='Appointments' datatype='integer' name='[appointments]' role='measure' type='quantitative' />
+            <column-instance column='[specialization]' derivation='None' name='[none:specialization:nk]' pivot='key' type='nominal' />
+            <column caption='Specialization' datatype='string' name='[specialization]' role='dimension' type='nominal' />
+            <column-instance column='[appointments]' derivation='Sum' name='[sum:appointments:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.05a4qp91kz3cvc18p96oh08bi67g].[none:specialization:nk]</rows>
+        <cols>[federated.05a4qp91kz3cvc18p96oh08bi67g].[sum:appointments:qk]</cols>
+      </table>
+      <simple-id uuid='{62704514-1140-49CF-9E4B-50A936EC7822}' />
+    </worksheet>
+    <worksheet name='Completed KPI'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gold_summary' name='federated.1bdylm50pykv2l19913zi0cjncp3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bdylm50pykv2l19913zi0cjncp3'>
+            <column caption='Completed' datatype='integer' name='[completed]' role='measure' type='quantitative' />
+            <column-instance column='[completed]' derivation='Sum' name='[sum:completed:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1bdylm50pykv2l19913zi0cjncp3].[sum:completed:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0' fontsize='28'>&lt;</run>
+                <run fontalignment='0' fontsize='28'>[federated.1bdylm50pykv2l19913zi0cjncp3].[sum:completed:qk]</run>
+                <run fontalignment='0' fontsize='28'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3D0C42D0-CA8C-4838-B390-DF45E0539990}' />
+    </worksheet>
+    <worksheet name='Completion Rate KPI'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gold_summary' name='federated.1bdylm50pykv2l19913zi0cjncp3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bdylm50pykv2l19913zi0cjncp3'>
+            <column caption='Completion Rate Pct' datatype='real' name='[completion_rate_pct]' role='measure' type='quantitative' />
+            <column-instance column='[completion_rate_pct]' derivation='Sum' name='[sum:completion_rate_pct:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1bdylm50pykv2l19913zi0cjncp3].[sum:completion_rate_pct:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0' fontsize='28'>&lt;</run>
+                <run fontalignment='0' fontsize='28'>[federated.1bdylm50pykv2l19913zi0cjncp3].[sum:completion_rate_pct:qk]</run>
+                <run fontalignment='0' fontsize='28'>&gt;%</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{937EB79F-07E6-4357-8662-270FA9D27402}' />
+    </worksheet>
+    <worksheet name='Daily Trend'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gold_daily' name='federated.1388pvj119p5181391djb0ytiqrl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1388pvj119p5181391djb0ytiqrl'>
+            <column caption='Appointment Date' datatype='date' name='[appointment_date]' role='dimension' type='ordinal' />
+            <column caption='Appointments' datatype='integer' name='[appointments]' role='measure' type='quantitative' />
+            <column-instance column='[appointment_date]' derivation='None' name='[none:appointment_date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[appointments]' derivation='Sum' name='[sum:appointments:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1388pvj119p5181391djb0ytiqrl].[sum:appointments:qk]</rows>
+        <cols>[federated.1388pvj119p5181391djb0ytiqrl].[none:appointment_date:qk]</cols>
+      </table>
+      <simple-id uuid='{68916508-5185-41A6-A721-CC93822D7866}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Hospital Operations&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='dash-title'>
+          <format attr='background-color' value='#dfedeb' />
+          <format attr='font-weight' value='bold' />
+          <format attr='color' value='#499894' />
+        </style-rule>
+        <style-rule element='dash-subtitle'>
+          <format attr='font-weight' value='bold' />
+          <format attr='color' value='#499894' />
+          <format attr='background-color' value='#dfedeb' />
+        </style-rule>
+      </style>
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='11' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone fixed-size='104' h='14584' id='12' is-fixed='true' type-v2='title' w='98828' x='586' y='1042'>
+              <zone-style>
+                <format attr='border-color' value='#444444' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='83332' id='9' type-v2='layout-basic' w='98828' x='586' y='15626'>
+              <zone h='41665' id='3' name='Appointment KPI' w='26866' x='586' y='15626'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='41665' id='6' name='Completion Rate KPI' w='40190' x='59224' y='15626'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='41667' id='7' name='Daily Trend' w='31772' x='27452' y='57291'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='41667' id='8' name='Appointments by specialisation' w='26866' x='586' y='57291'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='41665' id='5' name='Completed KPI' w='31772' x='27452' y='15626'>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='41667' id='13' type-v2='text' w='40190' x='59224' y='57291'>
+                <formatted-text>
+                  <run>imi&#10;</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#444444' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#444444' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='26953' id='14' type-v2='text' w='33309' x='64422' y='64583'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Business actions</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Check doctor-to-specialization links: </run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>95 of 98 appointments</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'> are labeled “Unknown.”</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Review no-shows and try appointment reminders; use the results to fill cancelled slots from a waitlist.</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='3906' id='15' type-v2='text' w='31552' x='586' y='11198'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>A straightforward dashboard for appointment performance</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run>Hospital Operations&#10;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1750' minheight='1750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='19' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='18' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+                <zone fixed-size='104' h='14584' id='12' type-v2='title' w='98828' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3906' id='15' type-v2='text' w='31552' x='586' y='11198'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>A straightforward dashboard for appointment performance</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41665' id='3' is-fixed='true' name='Appointment KPI' w='26866' x='586' y='15626'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41665' id='5' is-fixed='true' name='Completed KPI' w='31772' x='27452' y='15626'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41665' id='6' is-fixed='true' name='Completion Rate KPI' w='40190' x='59224' y='15626'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41667' id='8' is-fixed='true' name='Appointments by specialisation' w='26866' x='586' y='57291'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41667' id='7' is-fixed='true' name='Daily Trend' w='31772' x='27452' y='57291'>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='41667' id='13' type-v2='text' w='40190' x='59224' y='57291'>
+                  <formatted-text>
+                    <run>imi&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='26953' id='14' type-v2='text' w='33309' x='64422' y='64583'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Business actions</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'>Check doctor-to-specialization links: </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>95 of 98 appointments</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'> are labeled “Unknown.”</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book'>Review no-shows and try appointment reminders; use the results to fill cancelled slots from a waitlist.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#444444' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#444444' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{190235ED-AB3B-464C-8A35-06568DA3F785}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='115'>
+    <window class='worksheet' name='Appointment KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{716D4248-7B21-4AAE-B578-DE2465B63532}' />
+    </window>
+    <window class='worksheet' name='Completed KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F9D1CB45-EB7D-4999-81A3-4780927F67A4}' />
+    </window>
+    <window class='worksheet' name='Completion Rate KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{28039542-A5B2-47AB-8541-0D6CE2806D00}' />
+    </window>
+    <window class='worksheet' name='Daily Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1388pvj119p5181391djb0ytiqrl].[yr:appointment_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E0601F4E-EC96-4BFA-A642-B24C2140FEF8}' />
+    </window>
+    <window class='worksheet' name='Appointments by specialisation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.05a4qp91kz3cvc18p96oh08bi67g].[none:specialization:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3414291B-1706-4D7F-8696-C3FDEF3A2780}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Appointment KPI'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Appointments by specialisation' />
+        <viewpoint name='Completed KPI'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Completion Rate KPI'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Daily Trend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{F69DE3A1-ADF8-4DEB-829D-82AAC006DE3D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='69' name='Appointment KPI' width='84'>
+      iVBORw0KGgoAAAANSUhEUgAAAFQAAABFCAYAAADU4cH/AAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAJ6klEQVR4nO2af0zUZRzHX33n3UGXB4jgRhdpnpSaenoDI5YZK1daNis3nHNGc5CbM0DL
+      MfvHNC2W+EdrMjDHFqbOOU3bzbUymqmhOUS2pnIqgxMUDcfBCXzvfK4/bnwHxcH9eByufV9/
+      wX2fz/N5vu/v832ez+fzfR4LBAIBdKShjPUA/m/ogkpGF1QyuqCS0QWVjC6oZHRBJaMLKhld
+      UMnogkpGF1QyuqCS0QWVjC6oZHRBJaMLKhldUMnogkpGF1QyuqCS0QWVjC6oZHRBJaMLKplx
+      D7Nzn8/HvXv3tP+TkpIwGAwP0+WYI13Qjo4ODh8+zLFjx7hz586Qa4qi8OSTT7Jy5UoWL17M
+      448/HrO/+vp6nE4ndXV13Lp1CyGEds1kMjFlyhTeeustFi1aRFJSUsz+RuMxWUdx7t+/T3l5
+      OceOHRtyU6EYP348mzdvJjc3F0WJfOURQvDHH3+wfv36sNorisKbb75JcXEx48ePj9hfuEgR
+      tL29nQ0bNnD16lXtN5PJxPTp00lLSwNAVVUaGhqGzFpFUSgsLCQ/Pz8iUfv6+ti1axdHjhzR
+      Hp7BYCA5OZmMjAyeeOIJrl+/Tnt7O11dXUNsExMTKSsrY968ebHcckhiFtTtdrNu3TrcbjcQ
+      nHkfffQRS5Ys+c96KYTgypUrbN26VRNfURRKSkrIy8sLy5+qqmzbtg2n0wlARkYGxcXF2O32
+      Ydfne/fuUVNTw8GDB+nr6wPAYrFQXl6O3W6P+r5DEoiB/v7+QGlpacDhcAQcDkdg9erVgdu3
+      b4dlt2PHjkBmZmbA4XAEXnnllUB9fX1YPo8fPx6YP39+wOFwBLKzswMPHjwIy66lpSWwYsUK
+      bawrVqwIdHZ2hmUbCTGFTWfPnuXkyZMAWK1Wtm3bRmpq6qh2RqORkpISXn31VQA8Hg9VVVX0
+      9vaOaOfxeDhw4AB+vx+AVatWhb1UPPXUU3zxxRfaEuRyuTh16lRYtpEQtaC9vb18//33+P1+
+      xo0bR3FxMVarNWx7o9FIQUEBEydOBIK79fnz50e0uXz5Mjdu3AAgPT2d9957L6IxD7YRQnDy
+      5Ent4cgiakHdbjculwsAm83G3LlzI+5j8uTJLF68GAiujSdOnBgxQujs7KS/vx+AGTNmkJKS
+      ErHP7OxsEhISAGhpacHj8UTcx0hELei1a9e0HfTFF1/EYrFE1c+iRYs020uXLtHR0RGybUtL
+      i/Z3enp6VP4SEhIwmUxAMFp4ZGbo4JvLyMiIegBTpkzhueeeA+Du3bvarB+OwSL29PRE5W+w
+      gHFxcYwbJze3kSJoLJhMJi188fv9XLp0KWTbtLQ0zGYzAFeuXBl1ExuOpqYmOjs7geADivbN
+      CsUjURyx2Wzabt3c3BxyHZ02bZo2mxsbG0fdxP6Nqqr88MMP+P1+FEUhNzf30ZmhMl6/ASZN
+      mqTNvDt37oScefHx8XzwwQfEx8ejqirl5eVh+xBCUF1dze+//w5AZmYmr732WkzjHg4pgp47
+      dy6s/D0UKSkpxMfHA3D79m28Xm/ItpmZmbz//vsoioLb7ebMmTOj+u7r6+PLL79kz549CCGw
+      Wq2UlpZqPmUStaBTp07Vwo/6+not9YwGk8mk9TUaiqKQn5/Ppk2biIuLo6ioiA8//JDffvtt
+      SN7u8/m4ceMGu3fv5o033uDw4cMIIZg+fTq7d++OKGaOhJhy+bq6OjZu3Ehvb692o4WFhREV
+      Onw+H7/88gu7du3i77//xmw28/XXXzN79uyw7A8cOMA333wz4gY1b948Nm/ezNNPPx32uKIl
+      JkGFEOzZs0d7lQCysrLYsGEDU6dODWnn8/lobGzk6NGj1NbWcv/+fe1aQkICFRUVTJs2bVTf
+      P/74I5999hkQnLkpKSk8++yzWrWptbVVWz4URSEnJ4ePP/5YSz8fBjFXm1RVZfv27TidziFr
+      WUpKCnPmzOGZZ57BarXS1NREe3s7f/31138KwQMzWghBamoq1dXVI9YEOjo6KC0tpaGhgfT0
+      dAoLC8nNzR222tTW1kZ1dTVOp5O+vj7i4uIoLi5m2bJlUdVhR0NKPVQIwXfffUdVVZVWIgsH
+      g8FAbm4ueXl5bN++naamplEFdbvdFBUV0dzcjNFopLa2FqPROKqv1tZWNm3axNWrV6Ouw4aD
+      lN4URWH16tUcP36cgoKCEXNss9nMyy+/zM6dO6mtreXzzz9n0qRJ2oYyeMf/N16vly1btmhi
+      lpSUhCUmBKtNFRUV2O12hBB8++23nDhxIvKbHQWpUW1SUhIFBQUUFBTg9Xrp6urC5XJhsVi0
+      LGcg3hzM4NjTbDaHFOno0aM0NDQAsHDhQpYuXRrR+CwWC0VFRaxfvx6Px8PevXvJysrSKl4y
+      eGiZktlsJi0tjQULFmC320lNTR1WTBgae6alpWnFi8F4vV5+/vlnhBDEx8fz7rvvhj07BzNj
+      xgwWLlwIBNPnM2fORNzHSDwSqefFixe1Ter5558ftk1bW5tWP7Bardhstqh8KYpCVlYWEFz7
+      z507F1U/IfuX2lsUeL1eGhsbgWDINHPmzJDtfD4fEHuVaMKECdpbMLjGKoMxF/TatWtcv34d
+      CBZJQmUwPT09qKoq3b+qqjx48EBaf2Mq6EBwPrB+5uTkhNzhLRaLNqu6urpimlVtbW2a/cSJ
+      E6UcuBhgTAV1uVz8+uuvQDBcGtgshsNqtZKcnAwEN7HLly9H5dPv9w/5OBduihsuYyaox+Oh
+      rKxMO/u0bNmyET9rJCYmaoXo/v5+9u3bF1WB+cKFC9pGZLFYpB94GBNBVVXlq6++4uLFi0Dw
+      E8ry5ctHtFEUhby8PO180vnz56mqqorIb3NzMzt27NAexIIFC6KOFkKOM9YO9u/fT2VlJd3d
+      3WG17+jooKSkRDv5YbFY+OSTT8I6yGWz2Vi+fDmKoiCEoKamhra2tlHthBD89NNP5Ofna2VG
+      q9XKmjVrpFfsY87lKysrqaysxGAwYLfbeeedd7Db7SQnJw8perS2trJv3z6tSAHB8OfTTz/l
+      9ddfD9ufqqpUVFRQU1ODEAKDwUB2djZvv/02s2bNIjExEUVR6O/v5+bNm5w+fZpDhw4NET41
+      NZWysrKQMW8sSBM0UhITE9myZQs5OTkR2wohcDqd7Ny5M+w3Y4A5c+awdevWh1bCi1nQ7u5u
+      9u/fz6FDh4Ycrg1FXFwcS5cuZe3atTEfK+zu7mbJkiVD6qnDoSgKNpuNdevW8cILLzyUst0A
+      0s6HCiG4efMmp06d4s8//8TlcmnfwI1GI7Nnz+all14iJydHatwnhMDlclFXV0dTUxM9PT3c
+      vXuXyZMnYzQamT9/Pg6HgwkTJkjzORLSBNUJMuap5/8NXVDJ6IJKRhdUMrqgktEFlYwuqGR0
+      QSXzD32kCijZ56hDAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='147' name='Appointments by specialisation' width='192'>
+      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
+      YII=
+    </thumbnail>
+    <thumbnail height='69' name='Completed KPI' width='84'>
+      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
+    </thumbnail>
+    <thumbnail height='69' name='Completion Rate KPI' width='184'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Daily Trend' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
